@@ -1,0 +1,38 @@
+// Odd numbers vs Even Numbers
+//Programmer - Ramachandra Shyanaka
+#include <iostream>
+using namespace std;
+bool isEven (int);
+
+
+
+int main(){
+    int val;
+    
+    do{
+    cout <<"Please enter the number :" <<endl;
+    cin  >>val;
+    
+    if(isEven(val))
+        cout<<"The number you entered "<<val<<" is a Even" <<endl;
+    else
+        cout<<"The number you entered "<<val<<" is a Odd" <<endl;
+    
+    } while(val!=' ');
+    
+    return 0;
+    
+    
+    
+}
+
+bool isEven (int num)
+{
+    bool status;
+   if(num % 2 == 0)
+       status = true;
+else
+    status = false;
+   return status;
+    
+}
